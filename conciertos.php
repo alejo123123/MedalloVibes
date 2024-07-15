@@ -21,8 +21,9 @@
                 // Iterar sobre cada fila del resultado de la consulta.
                 while ($datos = $sql->fetch_object()) {
                 ?>
-                <div class="bg-blue-300 text-center pt-6">
+                <div class="bg-blue-300 text-center p-6">
                     <div class="text-3xl">
+                        <img class="h-auto mb-6" src="img/pexels-wendywei-1190297.jpg" alt="concierto">
                    <td class="my-6 text-center text-2xl" >Nombre: <td class="my-6 text-center text-2xl"><?= $datos->nombre ?></td></td>
                    </div>
                     <p class="my-6 text-center text-2xl">Generos: <td class="my-6 text-center"><?= $datos->genero ?></td></p>
