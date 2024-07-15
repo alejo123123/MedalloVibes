@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
-    <h1 class="text-6xl text-center mt-12">MedalloVibes</h1>
+    <h1 class="text-6xl text-center mt-12 ">MedalloVibes</h1>
 <div class="grid md:grid-cols-2 gap-4 mt-24 mx-6 grid-cols-1">
 <script>
     function eliminar() {
@@ -69,7 +69,7 @@
                 // Iterar sobre cada fila del resultado de la consulta.
                 while ($datos = $sql->fetch_object()) {
                 ?>
-                   <tr>
+                   <tr class="text-center">
                     <td class="py-2 px-4 border-b border-gray-200"><?= $datos->id_concierto ?></td>
                     <td class="py-2 px-4 border-b border-gray-200"><?= $datos->nombre ?></td>
                     <td class="py-2 px-4 border-b border-gray-200"><?= $datos->genero ?></td>
@@ -85,6 +85,11 @@
         </table>
     </div>
 </div>
+
+<a class="text-blue-500 underline text-xl ml-6" href="conciertos.php">Resvisar Conciertos?</a>
+
+   
+
 
 <script src="https://kit.fontawesome.com/cb0924e7db.js" crossorigin="anonymous"></script>
 </body>
