@@ -38,6 +38,10 @@
             <label for="fecha" class="block text-gray-700 text-sm font-bold mb-2">Fecha</label>
             <input type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fecha" name="fecha">
         </div>
+        <div class="mb-4">
+            <label for="enlace" class="block text-gray-700 text-sm font-bold mb-2">Enlace</label>
+            <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="enlace" name="enlace">
+        </div>
         <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" name="registrar" value="registrar">Registrar</button>
 
         <?php 
