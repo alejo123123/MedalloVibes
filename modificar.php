@@ -3,7 +3,7 @@ include 'conexion.php';
 
 $id = $_GET["id"];
 
-$sql = $conexion->query("SELECT nombre, genero, artistanomb FROM conciertos WHERE id_concierto=$id");
+$sql = $conexion->query("SELECT nombre, genero, artistanomb, fecha, enlace FROM conciertos WHERE id_concierto=$id");
 
 ?>
 
@@ -38,7 +38,11 @@ $sql = $conexion->query("SELECT nombre, genero, artistanomb FROM conciertos WHER
             </div>
             <div class="mb-4">
                 <label for="fecha" class="block text-gray-700 text-sm font-bold mb-2">Fecha</label>
-                <input type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fecha" name="fecha" value="<?= htmlspecialchars($datos->artistanomb) ?>">
+                <input type="date" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="fecha" name="fecha" value="<?= htmlspecialchars($datos->fecha) ?>">
+            </div>
+            <div class="mb-4">
+                <label for="fecha" class="block text-gray-700 text-sm font-bold mb-2">Enlace</label>
+                <input type="text" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="enlace" name="enlace" value="<?= htmlspecialchars($datos->enlace) ?>">
             </div>
         <?php } ?>
 
