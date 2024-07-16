@@ -12,11 +12,11 @@
     <div class="grid md:grid-cols-3 grid-cols-1 md:gap-24 gap-8 mx-6"> 
 
                 <?php 
-                // Incluir el archivo de conexión a la base de datos.
+
                 include 'conexion.php';
 
-                // Ejecutar una consulta SQL para seleccionar todos los registros de la tabla 'conciertos'.
-                $sql = $conexion->query("SELECT nombre, genero, artistanomb, fecha FROM conciertos");
+               
+                $sql = $conexion->query("SELECT nombre, genero, artistanomb, fecha, enlace FROM conciertos");
 
                 // Iterar sobre cada fila del resultado de la consulta.
                 while ($datos = $sql->fetch_object()) {
@@ -28,7 +28,8 @@
                    </div>
                     <p class="my-6 text-center text-2xl">Generos: <td class="my-6 text-center"><?= $datos->genero ?></td></p>
                    <p class="my-6 text-center text-xl">Artistas: <td class="my-6 text-center"><?= $datos->artistanomb ?></td></p>
-                   <p class="my-6 text-center text-xl">Fecha: <td class="my-6 text-center"><?= $datos->fecha ?></td></p>  
+                   <p class="my-6 text-center text-xl">Fecha: <td class="my-6 text-center"><?= $datos->fecha ?></td></p> 
+                   <a href="<?= $datos->enlace?>" class="my-6 text-center text-xl text-yellow-400 text-2xl underline">Saber Mas!</a>   
                  </div>
                 
                 <?php } ?>
