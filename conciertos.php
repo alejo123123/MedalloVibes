@@ -4,7 +4,7 @@ include 'layouts/header.php';
 
 
 
-<body >
+<body class="bg-fondo">
     
     <h1 class="text-6xl text-center my-24 font-kalnia">Nuestros Conciertos</h1>
     <div class="grid md:grid-cols-3 grid-cols-1 md:gap-24 gap-8 mx-6"> 
@@ -27,7 +27,7 @@ include 'layouts/header.php';
                     <p class="my-6 text-center text-2xl">Generos: <td class="my-6 text-center"><?= $datos->genero ?></td></p>
                    <p class="my-6 text-center text-xl">Artistas: <td class="my-6 text-center"><?= $datos->artistanomb ?></td></p>
                    <p class="my-6 text-center text-xl">Fecha: <td class="my-6 text-center"><?= $datos->fecha ?></td></p> 
-                   <a href="<?= $datos->enlace?>" class="my-6 text-center text-xl text-yellow-400 text-2xl underline">Saber Mas!</a>   
+                   <a href="<?= $datos->enlace?>" class="my-6 text-center text-xl text-blue-600 text-2xl underline">Saber Mas!</a>   
                  </div>
                 
                 <?php } ?>

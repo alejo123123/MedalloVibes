@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crudsito</title>
+    <title>MedalloVibes</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
                 extend: {
                     colors: {
                         secondary: '#007bff', 
-                        fondo: '#2f3640',
+                        fondo: '#B4EEF0',
                     },
                     fontFamily: {
                         'kalnia': ['"Kalnia Glaze"', 'serif'],
