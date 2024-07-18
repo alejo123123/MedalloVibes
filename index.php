@@ -1,13 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Crudsito</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-    <h1 class="text-6xl text-center mt-12 ">MedalloVibes</h1>
+<?php 
+include 'layouts/header.php';
+?>
+
+
+<body class="bg-fondo">
+    <h1 class="text-6xl text-center mt-12 font-kalnia">MedalloVibes</h1>
 <div class="grid md:grid-cols-2 gap-4 mt-24 mx-6 grid-cols-1">
 <script>
     function eliminar() {
