@@ -1,0 +1,23 @@
+Tabla: artistas
+
+    id_artista: Identificador único del artista. Tipo: tinyint, NOT NULL, AUTO_INCREMENT, PRIMARY KEY
+    artnombre: Nombre del artista. Tipo: varchar(50)
+
+Tabla: conciertos
+
+    id_concierto: Identificador único del concierto. Tipo: tinyint, NOT NULL, AUTO_INCREMENT, PRIMARY KEY
+    id_arti: Identificador del artista. Tipo: tinyint
+    nombre: Nombre del concierto. Tipo: varchar(50)
+    genero: Género del concierto. Tipo: varchar(50)
+    artistanomb: Nombre del artista. Tipo: varchar(50)
+    fecha: Fecha del concierto. Tipo: date
+    enlace: Enlace al concierto. Tipo: varchar(255)
+
+Tabla: usuarios
+
+    id_usuario: Identificador único del usuario. Tipo: tinyint, NOT NULL, AUTO_INCREMENT, PRIMARY KEY
+    us_nombre: Nombre del usuario. Tipo: varchar(50)
+    us_correo: Correo electrónico del usuario. Tipo: varchar(50)
+    us_contrasena: Contraseña del usuario. Tipo: varchar(50)
+
+Si hubiera otras tablas que no se mencionaron en el contenido leído o si necesitas incluir campos adicionales, por favor indícalo.
