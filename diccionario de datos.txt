@@ -20,4 +20,3 @@ Tabla: usuarios
     us_correo: Correo electrónico del usuario. Tipo: varchar(50)
     us_contrasena: Contraseña del usuario. Tipo: varchar(50)
 
-Si hubiera otras tablas que no se mencionaron en el contenido leído o si necesitas incluir campos adicionales, por favor indícalo.
