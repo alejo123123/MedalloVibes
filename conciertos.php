@@ -4,7 +4,7 @@ include 'layouts/header.php';
 
 
 
-<body class="bg-fondo">
+<body class="bg-menta">
     
     <h1 class="text-6xl text-center my-24 font-kalnia">Nuestros Conciertos</h1>
     <div class="grid md:grid-cols-3 grid-cols-1 md:gap-24 gap-8 mx-6"> 
