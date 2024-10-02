@@ -3,7 +3,7 @@ include 'layouts/header.php';
 ?>
 
 
-<body class="bg-fondo">
+<body class="bg-menta">
     <h1 class="text-6xl text-center mt-12 font-kalnia">MedalloVibes</h1>
 <div class="grid md:grid-cols-2 gap-4 mt-24 mx-6 grid-cols-1">
 <script>
